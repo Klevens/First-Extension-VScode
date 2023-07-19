@@ -15,9 +15,36 @@
     "commands": [
       {
         "command": "first-extension-vscode.helloWorld",
-        "title": "Hello World"
+        "title": "Hola Mundo"
+      },
+
+      {
+        "command": "first-extension-vscode.goodbye",
+        "title": "Adios"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id" : "package-explorer",
+          "title" : "Package Explorer Klevens",
+          "icon" : "resources/icon.svg"
+        }
+      ]
+    },
+      "views" : {
+        "package-explorer" : [
+          {
+            "id" : "package-dependencies",
+            "name": "Dependencies"
+          },
+          {
+            "id" : "package-outline",
+            "name" : "Outline"
+          }
+        ]
+      }
+    
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
